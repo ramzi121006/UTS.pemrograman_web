@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stok Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+  <header>
+    <h2>📚 Data Stok Buku</h2>
+    <a href="dashboard.html">← Kembali</a>
+    
+  </header>
+
+  <main>
+    <button id="btnTambah">Tambah Buku</button>
+    
+  <table>
+    
+      <thead>
+        <tr>
+          <th>No</th><th>Cover</th><th>Kode</th><th>Nama</th><th>Jenis</th><th>Edisi</th><th>Stok</th><th>Harga</th>
+        </tr>
+      </thead>
+      <tbody id="stokBody"></tbody>
+    </table>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

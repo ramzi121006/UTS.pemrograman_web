@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+  <header>
+    <h2>🛒 Form Pemesanan Buku</h2>
+    <a href="dashboard.html">← Kembali</a>
+  </header>
+
+  <main>
+    <form id="formPesan">
+      <input type="text" id="nama" placeholder="Nama Pemesan" required>
+      <input type="text" id="kode" placeholder="Kode Buku" required>
+      <input type="number" id="jumlah" placeholder="Jumlah" required>
+      <textarea id="alamat" placeholder="Alamat Pengiriman" required></textarea>
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+
+    <h3>Daftar Pesanan</h3>
+    <table>
+      <thead>
+        <tr><th>Nama</th><th>Kode</th><th>Jumlah</th><th>Alamat</th></tr>
+      </thead>
+      <tbody id="tabelPesanan"></tbody>
+    </table>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
